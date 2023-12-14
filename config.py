@@ -13,6 +13,7 @@ class conf():
     mqtt_rssi_topic    = "elero/rssi/"
     mqtt_command_topic = "elero/command/"
     mqtt_memory_topic    = "elero/memory/"
+    mqtt_availability_topic = "elero/availability"
     mqtt_reconnect_delay = 300
     mqtt_id              = "elero"
 

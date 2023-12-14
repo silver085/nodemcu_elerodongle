@@ -80,6 +80,7 @@ for remoteIndex in range(0, len(conf.remote_addr)):
         if blind[3] > 0:
             blindlist.append((conf.remote_addr[remoteIndex], blind))
 
+client.publish(topic=conf.mqtt_availability_topic, payload="online")
 while True:
     if conf.enable_cc1101:
         data = radio.checkBuffer()
